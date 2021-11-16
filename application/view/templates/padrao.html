@@ -146,10 +146,10 @@ h2{
 
 </div>
 
-  <a href="#about">Financeiro</a>
-  <a href="#services">RH</a>
-  <a href="#clients">Compras</a>
-  <a href="#contact">Engenharia</a>
+  <a href="{{url_for('financeiro')}}">Financeiro</a>
+  <a href="{{url_for('rh')}}">RH</a>
+  <a href="{{url_for('compras')}}">Compras</a>
+  <a href="{{url_for('engenharia')}}">Engenharia</a>
 
  
   
@@ -157,11 +157,11 @@ h2{
     <i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-container">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
+    <a href="{{url_for('ti')}}">Link 1</a>
+    <a href="{{url_for('ti')}}">Link 2</a>
+    <a href="{{url_for('ti')}}">Link 3</a>
   </div>
-  <a href="#contact">teste</a>
+  <a href="{{url_for('ti')}}">Ti</a>
 
   
 </div>
@@ -174,56 +174,14 @@ h2{
   
       <table id="myTable">
         
-      <tr class="header">
-          <th style="width:40%;">Nome do Arquivo</th>
-          <th style="width: 20%;">Categoria</th>
-          <th style="width:40%;">Arquivo</tr>
-      </tr>
-      <tr>
-          <td>Teste</td>
-          <td></td>
-          <td><a href="{{ url_for('static', filename='pdf/1.pdf') }}" target="_blank">PDF teste 2</a></td>
-      </tr>
-      <tr>
-        <td>Teste</td>
-        <td>Teste</td>
-        <td><a href="1.pdf" target="_blank">PDF teste</a></td>
-      </tr> 
-      <tr>
-        <td>Teste</td>
-        <td></td>
-        <td><a href="1.pdf" target="_blank">PDF teste</a></td>
-      </tr> 
-      <tr>
-        <td>Teste</td>
-        <td></td>
-        <td><a href="1.pdf" target="_blank">PDF teste</a></td>
-      </tr>
-      <tr>
-        <td>Teste</td>
-        <td></td>
-        <td><a href="1.pdf" target="_blank">PDF teste</a></td>
-      </tr>
-      <tr>
-        <td>Teste</td>
-        <td></td>
-        <td><a href="1.pdf" target="_blank">PDF teste</a></td>
-      </tr>
-      <tr>
-        <td>Teste</td>
-        <td></td>
-        <td><a href="1.pdf" target="_blank">PDF teste</a></td>
-      </tr>
-      <tr>
-        <td>Teste</td>
-        <td></td>
-        <td><a href="1.pdf" target="_blank">PDF teste</a></td>
-      </tr>
-      <tr>
-        <td>Teste1</td>
-        <td></td>
-        <td><a href="1.pdf" target="_blank">PDF teste</a></td>
-      </tr>
+        <tr class="header">
+            <th style="width:40%;">Nome do Arquivo</th>
+            <th style="width: 20%;">Categoria</th>
+            <th style="width:40%;">Arquivo</tr>
+        </tr>
+        {% block content %}
+        
+        {% endblock %}
       </table>
   </div>
     

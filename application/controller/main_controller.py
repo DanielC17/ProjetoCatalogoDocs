@@ -5,4 +5,25 @@ from application.model.entity.documento import Documentos
 
 @app.route("/")
 def index():
-    return render_template("pagtest2.html")
+    return render_template("padrao.html")
+
+@app.route("/financeiro")
+def financeiro():
+    return render_template("financeiro.html")
+
+@app.route("/ti")
+def ti():
+    return render_template("ti.html")
+
+@app.route("/rh")
+def rh():
+    return render_template("rh.html")
+
+@app.route("/compras")
+def compras():
+    return render_template("compras.html")
+
+@app.route("/engenharia")
+def engenharia():
+    return render_template("engenharia.html")
+
