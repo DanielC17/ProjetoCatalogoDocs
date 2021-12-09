@@ -27,3 +27,7 @@ def compras():
 def engenharia():
     return render_template("engenharia.html")
 
+@app.route("/faturamento")
+def faturamento():
+    return render_template("faturamento.html")
+
